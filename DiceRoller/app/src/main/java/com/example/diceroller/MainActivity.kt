@@ -3,6 +3,7 @@ package com.example.diceroller
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import com.example.diceroller.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,5 +17,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.rollButton.text = "Let's Binding!"
+        binding.rollButton.setOnClickListener {
+            Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show()
+        }
     }
 }
