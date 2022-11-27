@@ -1,0 +1,3 @@
+[submodule "andfun-kotlin-dice-roller"]
+	path = andfun-kotlin-dice-roller
+	url = git@github.com:udacity/andfun-kotlin-dice-roller.git

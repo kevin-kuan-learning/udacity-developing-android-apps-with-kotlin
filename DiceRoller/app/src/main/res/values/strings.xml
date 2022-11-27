@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="title">Hello Android!</string>
+    <string name="button_caption">Roll</string>
+</resources>
