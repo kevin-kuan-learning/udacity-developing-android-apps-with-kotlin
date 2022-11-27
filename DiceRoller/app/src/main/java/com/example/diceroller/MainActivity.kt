@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import com.example.diceroller.databinding.ActivityMainBinding
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.rollButton.text = "Let's Binding!"
         binding.rollButton.setOnClickListener {
-            Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show()
+            val randInt = Random().nextInt(6) + 1
+            binding.helloText.text = randInt.toString()
         }
     }
 }
